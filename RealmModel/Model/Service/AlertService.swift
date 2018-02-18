@@ -42,7 +42,7 @@ class AlertService {
         vc.present(alert, animated: true)
     }
     
-    static func updateAlert(in vc: UIViewController,
+    static func updateAlert(in VC: UIViewController,
                             pickUpLine: Any,
                             completion: @escaping (String, Int?, String?) -> Void) {
         
@@ -73,7 +73,7 @@ class AlertService {
         }
         
         alert.addAction(action)
-        vc.present(alert, animated: true)
+        VC.present(alert, animated: true)
     }
     
 }
